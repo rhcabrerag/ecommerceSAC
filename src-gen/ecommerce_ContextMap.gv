@@ -1,0 +1,22 @@
+digraph "ContextMapGraph" {
+graph ["imagepath"="/tmp/GraphvizJava"]
+"CatalogProductosContext" ["margin"="0.3","orientation"="11","shape"="egg","fontsize"="16","style"="bold","label"="CatalogProductosContext\n","fontname"="sans-serif"]
+"GestionOrdenesContext" ["margin"="0.3","orientation"="323","shape"="egg","fontsize"="16","style"="bold","label"="GestionOrdenesContext\n","fontname"="sans-serif"]
+"GestionPagosContext" ["margin"="0.3","orientation"="112","shape"="egg","fontsize"="16","style"="bold","label"="GestionPagosContext\n","fontname"="sans-serif"]
+"GestionClientesContext" ["margin"="0.3","orientation"="243","shape"="egg","fontsize"="16","style"="bold","label"="GestionClientesContext\n","fontname"="sans-serif"]
+"GestionEnviosContext" ["margin"="0.3","orientation"="72","shape"="egg","fontsize"="16","style"="bold","label"="GestionEnviosContext\n","fontname"="sans-serif"]
+"GestionAutorizacionAutenticacionContext" ["margin"="0.3","orientation"="280","shape"="egg","fontsize"="16","style"="bold","label"="GestionAutorizacionAutenticacionContext\n","fontname"="sans-serif"]
+"CatalogProductosContext" -> "GestionOrdenesContext" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="1" border="0">
+<tr><td bgcolor="white" sides="r">U</td><td sides="trbl" bgcolor="white"><font>OHS</font></td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"GestionOrdenesContext" -> "GestionPagosContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"GestionOrdenesContext" -> "GestionClientesContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"GestionClientesContext" -> "GestionEnviosContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"GestionAutorizacionAutenticacionContext" -> "GestionClientesContext" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
+<tr><td bgcolor="white" sides="r">D</td><td sides="trbl" bgcolor="white"><font>CF</font></td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="1" border="0">
+<tr><td bgcolor="white" sides="r">U</td><td sides="trbl" bgcolor="white"><font>PL</font></td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+}
